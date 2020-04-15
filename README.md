@@ -17,3 +17,4 @@ Computing integral of exp(x) on the interval [0,1] using Simpson's method.
 
 ```
 
+Note the Integrate class and methods are all fully vectorized, thus the integrand must also be vectorized. 
