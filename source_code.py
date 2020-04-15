@@ -5,7 +5,14 @@ class Integrate:
 
     def __init__(self, func, start, end, method="lower_r", n=100):
         """
-        Constructor
+        func is the integrand. Note the integrand needs to be vectorized.
+        start is the start of the integrating interval.
+        end is the end of the integrating interval.
+        method is the different avaiables methods:
+        lower_r is for lower rectangle.
+        comp_trap is for composite trapzoid.
+        simpson is for Simpson's method.
+        mc is for Monte Carlo. 
         """
         self.func = func
         self.start = start
