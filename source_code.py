@@ -19,7 +19,7 @@ class Integrate:
         self.end = end
         self.n = n
         self.method = method
-        self.res = Integrate.solve(self)
+        self.res = self.solve()
 
     def __repr__(self):
         return str(self.res)
