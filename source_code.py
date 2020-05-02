@@ -8,6 +8,7 @@ class Integrate:
         func is the integrand. Note the integrand needs to be vectorized.
         start is the start of the integrating interval.
         end is the end of the integrating interval.
+        
         method is the different avaiables methods:
         lower_r is for lower rectangle.
         comp_trap is for composite trapzoid.
@@ -58,12 +59,12 @@ class Integrate:
 
     def solve(self):
         if self.method == "lower_r":
-            return Integrate.lower_r(self)
+            return self.lower_r()
         elif self.method == "comp_trap":
-            return Integrate.comp_trap(self)
+            return self.comp_trap()
         elif self.method == "simpson":
-            return Integrate.simpson(self)
+            return self.simpson()
         elif self.method == "mc":
-            return Integrate.mc(self)
+            return self.mc()
         else:
             return "Please input a valid method"
